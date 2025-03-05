@@ -48,10 +48,10 @@ com! -range -nargs=+ -com=command    B  silent <line1>,<line2>call vis#VisBlockC
 " com! -range -nargs=* -com=expression S  silent <line1>,<line2>call vis#VisBlockSearch(<q-args>)
 
 " Suggested by Hari --
-if exists("g:vis_WantSlashSlash") && g:vis_WantSlashSlash
- vn // <esc>/<c-r>=vis#VisBlockSearch()<cr>
-endif
-vn ?? <esc>?<c-r>=vis#VisBlockSearch()<cr>
+"if exists("g:vis_WantSlashSlash") && g:vis_WantSlashSlash
+ "vn // <esc>/<c-r>=vis#VisBlockSearch()<cr>
+"endif
+"vn ?? <esc>?<c-r>=vis#VisBlockSearch()<cr>
 
 " ---------------------------------------------------------------------
 "  Modelines: {{{1
